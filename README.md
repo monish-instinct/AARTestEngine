@@ -36,10 +36,11 @@ Click "Sync Now" in Android Studio.
 
 ### Minimum Requirements
 - **Min SDK**: 26 (Android 8.0)
-- **Target SDK**: 35
-- **Compile SDK**: 36
+- **Target SDK**: 34
+- **Compile SDK**: 34
 - **Java Version**: 11
-- **Kotlin**: 1.9.20+
+- **Kotlin**: 1.9.25+
+- **Android Gradle Plugin**: 8.2.2
 - **AndroidX**: Required
 
 ### Dependencies
