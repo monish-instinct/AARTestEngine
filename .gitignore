@@ -16,8 +16,10 @@ local.properties
 
 # Built application files
 *.apk
-*.aar
 *.ap_
+
+# Allow AAR files in library libs directory
+!library/libs/*.aar
 
 # Files for the ART/Dalvik VM
 *.dex
