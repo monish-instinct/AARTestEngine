@@ -130,7 +130,7 @@ dependencies {
     implementation 'androidx.compose.material3:material3'
     
     // 🚀 SkynetBee Developer Environment Library
-    implementation 'com.github.monish-instinct:AARTestEngine:v1.0.0'
+    implementation 'com.github.monish-instinct:AARTestEngine:v1.0.1'
     
     // Testing dependencies
     testImplementation 'junit:junit:4.13.2'

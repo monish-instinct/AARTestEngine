@@ -24,7 +24,7 @@ Add this to your **app-level** `build.gradle`:
 
 ```gradle
 dependencies {
-    implementation 'com.github.monish-instinct:AARTestEngine:v1.0.0'
+    implementation 'com.github.monish-instinct:AARTestEngine:v1.0.1'
 }
 ```
 
