@@ -30,13 +30,13 @@ android {
         jvmTarget = '11'
     }
     
-    // buildFeatures {
-    //     compose true
-    // }
-    // 
-    // composeOptions {
-    //     kotlinCompilerExtensionVersion '1.5.15'
-    // }
+    buildFeatures {
+        compose true
+    }
+    
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.5.15'
+    }
 }
 
 dependencies {
