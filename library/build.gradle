@@ -40,9 +40,6 @@ android {
 }
 
 dependencies {
-    // Include the actual AAR file
-    api fileTree(dir: 'libs', include: ['*.aar'])
-    
     // ✅ Standard AndroidX + Jetpack Compose libraries (compatible versions)
     api 'androidx.core:core-ktx:1.13.1'
     api 'androidx.lifecycle:lifecycle-runtime-ktx:2.8.6'
