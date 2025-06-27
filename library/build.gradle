@@ -6,11 +6,11 @@ plugins {
 
 android {
     namespace 'com.skynetbee.aartest'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         minSdk 26
-        targetSdk 34
+        targetSdk 35
         consumerProguardFiles "consumer-rules.pro"
     }
 
@@ -29,7 +29,14 @@ android {
     kotlinOptions {
         jvmTarget = '11'
     }
-}
+    
+    buildFeatures {
+        compose true
+    }
+    
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.5.15'
+    }
 
 dependencies {
     // ✅ Standard AndroidX + Jetpack Compose libraries
