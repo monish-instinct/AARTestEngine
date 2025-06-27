@@ -75,6 +75,16 @@ dependencies {
 }
 
 afterEvaluate {
+    tasks.register("prepareAAR") {
+        doLast {
+            copy {
+                from("$buildDir/outputs/aar/library-release.aar")
+                into("$buildDir/../libs/")
+                rename { "developer-environment-library.aar" }
+            }
+        }
+    }
+
     publishing {
         publications {
             release(MavenPublication) {
@@ -82,8 +92,13 @@ afterEvaluate {
                 artifactId = 'AARTestEngine'
                 version = '1.0.2'
 
-                artifact("libs/developer-environment-library.aar")
+                artifact("$buildDir/../libs/developer-environment-library.aar")
             }
         }
     }
+
+    tasks.named("publishToMavenLocal").configure {
+        dependsOn("assembleRelease", "prepareAAR")
+    }
 }
+
